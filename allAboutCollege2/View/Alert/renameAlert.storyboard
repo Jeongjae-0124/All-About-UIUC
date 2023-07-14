@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rename Alert View Controller-->
+        <scene sceneID="Geh-FD-BNG">
+            <objects>
+                <viewController storyboardIdentifier="renameAlertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="neW-L9-INu" customClass="renameAlertViewController" customModule="allAboutCollege2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AvC-La-Nff">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sW1-PE-hPH">
+                                <rect key="frame" x="44.666666666666657" y="326" width="304" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Enter new schedule name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdF-yZ-fRA">
+                                        <rect key="frame" x="39.333333333333329" y="33" width="225.33333333333337" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7R-Ss-nSu">
+                                        <rect key="frame" x="0.0" y="159" width="152" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="s4n-vU-9bM"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Rename"/>
+                                        <connections>
+                                            <action selector="renameButtonTouched:" destination="neW-L9-INu" eventType="touchUpInside" id="2B9-LK-Fx7"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type new schedule name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H6L-QG-XNT">
+                                        <rect key="frame" x="56.000000000000014" y="77" width="191.66666666666669" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HP5-8D-IY3">
+                                        <rect key="frame" x="152" y="159" width="152" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="neW-L9-INu" eventType="touchUpInside" id="pL7-2y-msk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="c7R-Ss-nSu" firstAttribute="width" secondItem="sW1-PE-hPH" secondAttribute="width" multiplier="0.5" id="41r-XL-5ms"/>
+                                    <constraint firstItem="xdF-yZ-fRA" firstAttribute="centerX" secondItem="sW1-PE-hPH" secondAttribute="centerX" id="AA3-Yb-mYQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="HP5-8D-IY3" secondAttribute="bottom" id="D42-RR-fZC"/>
+                                    <constraint firstItem="c7R-Ss-nSu" firstAttribute="leading" secondItem="sW1-PE-hPH" secondAttribute="leading" id="E2r-4r-aCa"/>
+                                    <constraint firstAttribute="bottom" secondItem="c7R-Ss-nSu" secondAttribute="bottom" id="IEf-re-AB0"/>
+                                    <constraint firstAttribute="trailing" secondItem="HP5-8D-IY3" secondAttribute="trailing" id="IFL-by-7xk"/>
+                                    <constraint firstItem="HP5-8D-IY3" firstAttribute="height" secondItem="c7R-Ss-nSu" secondAttribute="height" id="MPp-CY-FEs"/>
+                                    <constraint firstAttribute="height" constant="200" id="VnZ-7C-u2x"/>
+                                    <constraint firstItem="H6L-QG-XNT" firstAttribute="centerX" secondItem="sW1-PE-hPH" secondAttribute="centerX" id="Yq1-WI-AZd"/>
+                                    <constraint firstItem="xdF-yZ-fRA" firstAttribute="top" secondItem="sW1-PE-hPH" secondAttribute="top" constant="33" id="hed-4R-Kg5"/>
+                                    <constraint firstItem="HP5-8D-IY3" firstAttribute="width" secondItem="sW1-PE-hPH" secondAttribute="width" multiplier="0.5" id="sDj-Ne-FZw"/>
+                                    <constraint firstItem="H6L-QG-XNT" firstAttribute="top" secondItem="xdF-yZ-fRA" secondAttribute="bottom" constant="20" id="t5Y-Tr-rz6"/>
+                                    <constraint firstAttribute="width" constant="304" id="wvp-se-ZzF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LSo-hl-Hg8"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sW1-PE-hPH" firstAttribute="centerY" secondItem="AvC-La-Nff" secondAttribute="centerY" id="Yal-Cr-cks"/>
+                            <constraint firstItem="sW1-PE-hPH" firstAttribute="centerX" secondItem="AvC-La-Nff" secondAttribute="centerX" id="bcr-Pd-aos"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newScheduleName" destination="H6L-QG-XNT" id="WfT-Er-Lke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDS-el-3XM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.70229007633588" y="-163.38028169014086"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

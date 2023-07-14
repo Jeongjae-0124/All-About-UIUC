@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E5C3733A-41D9-4618-A5A8-32A23679D258"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4CC9947-745F-43CF-8149-D31119F72BB1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "allAboutCollege2/Controller/alertController/reportAlertViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "reportButtonTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F4CC9947-745F-43CF-8149-D31119F72BB1 - d8cefce4a6950100"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "allAboutCollege2.reportAlertViewController.reportButtonTapped(Any) -&gt; ()"
+                  moduleName = "allAboutCollege2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeongjaepark/Desktop/allAboutCollege2/allAboutCollege2/Controller/alertController/reportAlertViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "F4CC9947-745F-43CF-8149-D31119F72BB1 - d8cefce4a6950100"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "allAboutCollege2.reportAlertViewController.reportButtonTapped(Any) -&gt; ()"
+                  moduleName = "allAboutCollege2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeongjaepark/Desktop/allAboutCollege2/allAboutCollege2/Controller/alertController/reportAlertViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "F4CC9947-745F-43CF-8149-D31119F72BB1 - d8cefce4a6950100"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "allAboutCollege2.reportAlertViewController.reportButtonTapped(Any) -&gt; ()"
+                  moduleName = "allAboutCollege2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeongjaepark/Desktop/allAboutCollege2/allAboutCollege2/Controller/alertController/reportAlertViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "532">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feedback Alert View Controller-->
+        <scene sceneID="Om3-QZ-1GS">
+            <objects>
+                <viewController storyboardIdentifier="feedbackAlertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ceh-o3-RMo" customClass="feedbackAlertViewController" customModule="allAboutCollege2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lNS-Mn-KO4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KrE-DW-jxi">
+                                <rect key="frame" x="44.666666666666657" y="212.66666666666663" width="304" height="427"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback and report bugs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVC-3P-pPt">
+                                        <rect key="frame" x="46" y="20" width="212" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEF-mc-r79">
+                                        <rect key="frame" x="0.0" y="364" width="304" height="63"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSF-iL-kfB">
+                                                <rect key="frame" x="0.0" y="0.0" width="152" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="63" id="G7h-JW-ELT"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                                <connections>
+                                                    <action selector="submitButtonTapped:" destination="ceh-o3-RMo" eventType="touchUpInside" id="4tt-Jx-76E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptD-S0-RrZ">
+                                                <rect key="frame" x="152" y="0.0" width="152" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="ceh-o3-RMo" eventType="touchUpInside" id="MFP-PL-tbs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ptD-S0-RrZ" firstAttribute="height" secondItem="JSF-iL-kfB" secondAttribute="height" id="vtD-zq-2e4"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d4n-UW-fRl">
+                                        <rect key="frame" x="15" y="61.666666666666657" width="274" height="272.33333333333337"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="427" id="2zV-ks-ETg"/>
+                                    <constraint firstItem="gVC-3P-pPt" firstAttribute="top" secondItem="KrE-DW-jxi" secondAttribute="top" constant="20" id="Amh-ej-kTG"/>
+                                    <constraint firstAttribute="bottom" secondItem="JEF-mc-r79" secondAttribute="bottom" id="DqW-6w-1NZ"/>
+                                    <constraint firstItem="gVC-3P-pPt" firstAttribute="centerX" secondItem="d4n-UW-fRl" secondAttribute="centerX" id="Jk5-2D-fl2"/>
+                                    <constraint firstItem="JEF-mc-r79" firstAttribute="top" secondItem="d4n-UW-fRl" secondAttribute="bottom" constant="30" id="Q5y-Jv-nHa"/>
+                                    <constraint firstItem="JEF-mc-r79" firstAttribute="width" secondItem="KrE-DW-jxi" secondAttribute="width" id="QLi-64-kad"/>
+                                    <constraint firstItem="d4n-UW-fRl" firstAttribute="leading" secondItem="KrE-DW-jxi" secondAttribute="leading" constant="15" id="V5C-i3-o4M"/>
+                                    <constraint firstAttribute="trailing" secondItem="d4n-UW-fRl" secondAttribute="trailing" constant="15" id="Ysm-0m-6lS"/>
+                                    <constraint firstAttribute="width" constant="304" id="dTQ-5a-xq7"/>
+                                    <constraint firstAttribute="trailing" secondItem="JEF-mc-r79" secondAttribute="trailing" id="hFj-Wh-t05"/>
+                                    <constraint firstItem="JEF-mc-r79" firstAttribute="leading" secondItem="KrE-DW-jxi" secondAttribute="leading" id="jqG-fL-4sb"/>
+                                    <constraint firstItem="d4n-UW-fRl" firstAttribute="top" secondItem="gVC-3P-pPt" secondAttribute="bottom" constant="20" id="x5K-Ml-ere"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bQH-sS-XQ5"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KrE-DW-jxi" firstAttribute="centerX" secondItem="lNS-Mn-KO4" secondAttribute="centerX" id="dia-Ce-WcG"/>
+                            <constraint firstItem="KrE-DW-jxi" firstAttribute="centerY" secondItem="lNS-Mn-KO4" secondAttribute="centerY" id="oEH-K4-mht"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedbackTextView" destination="d4n-UW-fRl" id="YBV-NQ-vbK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkm-fI-fSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121.37404580152672" y="-503.52112676056339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
